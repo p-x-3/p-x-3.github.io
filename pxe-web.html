@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<!-- This is the official website project -->
+
+<!DOCTYPE html>
+<html>
+<title>Primus Xakep Evac</title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+</head>
+<header class="px3-container px3-padding-32 px3-center px3-black" id="home">
+    <h1 class="px3-jumbo"><span class="px3-hide-small">We're</span> Primus Xakep Evac</h1>
+    <p>Science, Technology...and The Future.</p>
+    <img src="res/img/js_blah.png" alt="boy" class="px3-image" width="992" height="1108">
+</header>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('res/img/ded.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Projects) */
+.bgimg-2 {
+    background-image: url("res/img/hacking.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Community) */
+.bgimg-3 {
+    background-image: url("res/img/ai_red.jpg");
+    min-height: 400px;
+}
+
+.px3-wide {letter-spacing: 10px;}
+.px3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<p>LOGIN <i class="fa fa-coffee"></i>, or JOIN US!</p>
+<form action="px3.html" target="_blank">
+    <div class="px3-row-padding" style="margin:0 -16px 8px -16px">
+    	<div class="px3-half">
+          <input class="px3-input px3-border" type="text" placeholder=" username or email" required name="username">
+        </div>
+        <div class="px3-half">
+          <input class="px3-input px3-border" type="password" placeholder=" password" required name="password">
+        </div>
+        <div>
+        	<button class="px3-btn px3-black px3-padding px3-section" type="submit">
+        		<i class="fa fa-paper-plane">Login</i>
+    		</button>
+        </div>
+    </div>
+</form>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="px3-top">
+  <ul class="px3-navbar" id="myNavbar">
+    <li class="px3-hide-medium px3-hide-large px3-opennav px3-right">
+      <a class="px3-hover-aqua" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+    </li>
+    <li class="px3-left-align"><a href="#home"> PX3 HOME</a></li>
+    <li class="px3-hide-small"><a href="#about"><i class="fa fa-user"></i> ABOUT PX3</a></li>
+    <li class="px3-hide-small"><a href="#portfolio"><i class="fa fa-th"></i> PX3 PROJECTS</a></li>
+    <li class="px3-hide-small"><a href="#contact"><i class="fa fa-envelope"></i> PX3 COMMUNITY</a></li>
+    <li class="px3-hide-small px3-right">
+      <a href="#" class="px3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </li>
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="px3-hide px3-hide-large px3-hide-medium">
+    <ul class="px3-navbar px3-left-align px3-white">
+      <li><a href="#about" onclick="toggleFunction()">ABOUT PX3</a></li>
+      <li><a href="#portfolio" onclick="toggleFunction()">PX3 PROJECTS</a></li>
+      <li><a href="#contact" onclick="toggleFunction()">PX3 COMMUNITY</a></li>
+      <li><a href="#">SEARCH</a></li>
+    </ul>
+  </div>
+</div>
+<div class="px3-content px3-justify px3-text-grey px3-padding-64" id="about">
+  <h2 class="px3-text-light-grey">We Are</h2>
+  <hr style="width:200px" class="px3-opacity">
+  <p> 
+  </p>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+  <div class="px3-display-middle" style="white-space:nowrap;">
+    <span class="px3-center px3-padding-xlarge px3-black px3-xlarge px3-wide px3-animate-opacity">Primus <span class="px3-hide-small"> Xakep</span> Evac</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="bgimg-1 px3-display-container px3-opacity-min" id="about">
+  <h3 class="px3-center">ABOUT PX3</h3>
+  <p class="px3-center"><em>We love Talent, Yearn Skills and ask lots of Questions!</em></p>
+  <p>A group of Curious and intelligent minds with skills to back our aims while satisfying our 
+  	  curiosity across the spectrum. From Science and Technology all the way to Philosphy, Psychology, 
+  	  Art and tons of other interesting phenomenons, our members pioneer provocative thoughts and ideas that 
+      change the way we look and interact with the world around and within us! at Primus Xakep Evac, 
+      we challenge ourselves to challenge ourselves and repeat......COME JOIN US!!!</p>
+  <div class="px3-row">
+    <div class="px3-col m6 px3-center px3-padding-large">
+      <p><b><i class="fa fa-user px3-margin-right"></i>WE ARE P-X-3</b></p><br>
+      <img src="res/img/pythongreen.jpg" class="px3-round px3-image px3-opacity px3-hover-opacity-off" alt="we love complex problems" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="px3-col m6 px3-hide-small px3-padding-large">
+      <p>Welcome to our website. WE are here for knowledge and fun!</p>
+    </div>
+  </div>
+  <p class="px3-large px3-center px3-padding-16">Somethings we are really good at:</p>
+  <p class="px3-wide"><i class="fa fa-camera"></i>Hacking and Coding</p>
+  <div class="px3-progress-container">
+    <div class="px3-progressbar" style="width:90%"></div>
+  </div>
+  <p class="px3-wide"><i class="fa fa-laptop"></i>Software Design and Engineering</p>
+  <div class="px3-progress-container">
+    <div class="px3-progressbar" style="width:85%"></div>
+  </div>
+  <p class="px3-wide px3-text-red"><i class="fa fa-photo"></i>Problem Research and Analysis</p>
+  <div class="px3-progress-container">
+    <div class="px3-progressbar" style="width:75%"></div>
+  </div>
+</div>
+
+<div class="px3-row px3-center px3-black px3-padding-16">
+  <div class="px3-quarter px3-section">
+    <span class="px3-xlarge">4+</span><br>
+    Members
+  </div>
+  <div class="px3-quarter px3-section">
+    <span class="px3-xlarge">1+</span><br>
+    Projects Done
+  </div>
+  <div class="px3-quarter px3-section">
+    <span class="px3-xlarge">8+</span><br>
+    Communinity Members
+  </div>
+  <div class="px3-quarter px3-section">
+    <span class="px3-xlarge">10+</span><br>
+    Meet-ups
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 px3-display-container px3-opacity-min">
+  <div class="px3-display-middle">
+    <span class="px3-xxlarge px3-text-light-grey px3-wide">PX3 PROJECTS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="px3-content px3-container px3-padding-64" id="portfolio">
+  <h3 class="px3-center">PX3 WORK</h3>
+  <p class="px3-center"><em>Here are some of OUR current and latest PX3 Projects.</em></p>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="px3-row-padding px3-center">
+    <div class="px3-col m3">
+      <img src="res/img/math-physics.jpg" style="width:100%" onclick="onClick(this)" class="px3-hover-opacity" alt="Mathematics and Physics">
+    </div>
+
+    <div class="px3-col m3">
+      <img src="res/img/python-coding-language-sign-on.webp" style="width:100%" onclick="onClick(this)" class="px3-hover-opacity" alt="Python Networking">
+    </div>
+
+    <div class="px3-col m3">
+      <img src="res/img/Python-Programming-RoboDK-API.png" style="width:100%" onclick="onClick(this)" class="px3-hover-opacity" alt="Python Programming on RoboDK API">
+    </div>
+
+    <div class="px3-col m3">
+      <img src="res/img/js_rest_api.png" style="width:100%" onclick="onClick(this)" class="px3-hover-opacity" alt="Javascript Rest Api">
+    </div>
+  </div>
+
+  <div class="px3-row-padding px3-center px3-section">
+    <div class="px3-col m3">
+      <img src="res/img/node_9.0.png" style="width:100%" onclick="onClick(this)" class="px3-hover-opacity" alt="Node 9.0+">
+    </div>
+
+    <div class="px3-col m3">
+      <img src="res/img/Nano-tech.jpg" style="width:100%" onclick="onClick(this)" class="px3-hover-opacity" alt="Cutting-Edge Technologies">
+    </div>
+
+    <div class="px3-col m3">
+      <img src="res/img/Keys.jpg" style="width:100%" onclick="onClick(this)" class="px3-hover-opacity" alt="Coding">
+    </div>
+
+    <div class="px3-col m3">
+      <img src="res/img/future_earth.jpg" style="width:100%" onclick="onClick(this)" class="px3-hover-opacity" alt="Big Data and Open Source">
+    </div>
+    <button class="px3-btn px3-green px3-padding-xlarge" style="margin-top:64px">And MORE....!!!</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="px3-modal px3-black" onclick="this.style.display='none'">
+  <span class="px3-closebtn px3-text-white px3-opacity px3-hover-opacity-off px3-xxlarge px3-container px3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="px3-modal-content px3-animate-zoom px3-center px3-transparent px3-padding-64">
+    <img id="img01" class="px3-image">
+    <p id="caption" class="px3-opacity px3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 px3-display-container px3-opacity-min">
+  <div class="px3-display-middle">
+     <span class="px3-xxlarge px3-text-aqua px3-wide">PX3 COMMUNITY</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="px3-content px3-container px3-padding-64" id="contact">
+  <h3 class="px3-center px3-text-red"><em>The Mind knows only the Limits We Set For Ourselves. Explore More!</em></h3>
+
+  <div class="px3-row px3-padding-32 px3-section">
+    <div class="px3-col m4 px3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="px3-round-large px3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="px3-col m8 px3-container px3-section">
+      <div class="px3-large px3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw px3-hover-text-green px3-xlarge px3-margin-right"></i> Lusaka, Zambia<br>
+        <i class="fa fa-phone fa-fw px3-hover-text-green px3-xlarge px3-margin-right"></i> Phone: +00 013370<br>
+        <i class="fa fa-envelope fa-fw px3-hover-text-green px3-xlarge px3-margin-right"></i> Email: px3@pxemail.com<br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="px3-center px3-black px3-padding-64 px3-opacity px3-hover-opacity-off">
+  <a href="#home" class="px3-btn px3-padding px3-light-grey px3-hover-grey"><i class="fa fa-arrow-up px3-margin-right"></i>To the top</a>
+  <div class="px3-xlarge px3-section">
+    <i class="fa fa-facebook-official px3-hover-text-indigo"></i>
+    <i class="fa fa-instagram px3-hover-text-purple"></i>
+    <i class="fa fa-snapchat px3-hover-text-yellow"></i>
+    <i class="fa fa-pinterest-p px3-hover-text-red"></i>
+    <i class="fa fa-twitter px3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin px3-hover-text-indigo"></i>
+  </div>
+  <p> <a href="px3.html" title="px3" target="_blank" class="px3-hover-text-green">P-X-3</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js">
+	<script>
+		<!-- Google Map Location -->
+		var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+		function initialize() {
+			var mapProp = {
+  				center: myCenter,
+  				zoom: 12,
+  				scrollwheel: false,
+  				draggable: false,
+  				mapTypeId: google.maps.MapTypeId.ROADMAP
+  			};
+
+			var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+			var marker = new google.maps.Marker({
+  				position: myCenter,
+			});
+
+			marker.setMap(map);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+		// Modal Image Gallery
+		function onClick(element) {
+  			document.getElementById("img01").src = element.src;
+  			document.getElementById("modal01").style.display = "block";
+  			var captionText = document.getElementById("caption");
+  			captionText.innerHTML = element.alt;
+		}
+
+		// Change style of navbar on scroll
+		window.onscroll = function() {myFunction()};
+		function myFunction() {
+    		var navbar = document.getElementById("myNavbar");
+    		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        		navbar.className = "px3-navbar" + " px3-card-2" + " px3-animate-top" + " px3-white";
+    		} else {
+        		navbar.className = navbar.className.replace(" px3-card-2 px3-animate-top px3-white", "");
+    		}
+		}
+
+		// Used to toggle the menu on small screens when clicking on the menu button
+		function toggleFunction() {
+    		var x = document.getElementById("navDemo");
+    		if (x.className.indexOf("px3-show") == -1) {
+        		x.className += " px3-show";
+    		} else {
+        		x.className = x.className.replace(" px3-show", "");
+    		}
+		}
+	</script>
+</script>
+</body>
+</html>
