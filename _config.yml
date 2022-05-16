@@ -1,1 +1,3 @@
+{% comment %}
 theme: jekyll-theme-hacker
+{% endcomment %}
