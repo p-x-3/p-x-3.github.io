@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html><head><title>P-X-3 Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/px3-blue-grey-theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  html,body,h1,h2,h3,h4,h5 {font-family: "Lato Sans", sans-serif}
+  body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+  }
+</style>
+</head>
+<body class="px3-container px3-padding-32 px3-center px3-black">
+
+<!-- Navbar -->
+<div class="px3-top">
+ <ul class="px3-navbar px3-black px3-left-align px3-large">
+  <li class="px3-hide-medium px3-hide-large px3-opennav px3-right">
+    <a class="px3-padding-large px3-hover-white px3-large px3-black" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="https://p-x-3.github.io#home" class="px3-padding-large px3-black"><i class="fa fa-home px3-margin-right"></i>Home</a></li>
+  <li class="px3-hide-small"><a href="#" class="px3-padding-large px3-hover-white" title="News"><i class="fa fa-globe"></i></a></li>
+  <li class="px3-hide-small"><a href="#blog" class="px3-padding-large px3-hover-white" title="Blogs"><i class="fa fa-user"></i></a></li>
+  <li class="px3-hide-small"><a href="#" class="px3-padding-large px3-hover-white" title="Notifications"><i class="fa fa-envelope"></i></a></li>
+  <li class="px3-hide-small px3-dropdown-hover">
+    <a href="#" class="px3-padding-large px3-hover-white" title="Notifications"><i class="fa fa-bell"></i><span class="px3-badge px3-right px3-small px3-green">3</span></a>     
+    <div class="px3-dropdown-content px3-black px3-card-4">
+      <a href="#top_blog">One new blog post</a>
+      <a href="#">Someone joined p-x-3</a>
+    </div>
+  </li>
+  <li class="px3-hide-small px3-right"><a href="#" class="px3-padding-large px3-hover-white" title="My Profile"><img src="imgs/cybrary-img.jpg" class="px3-circle" style="height:25px;width:25px" alt="Avatar"></a></li>
+ </ul>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="px3-hide px3-hide-large px3-hide-medium px3-top" style="margin-top:51px">
+  <ul class="px3-navbar px3-left-align px3-large px3-black">
+    <li><a class="px3-padding-large" href="https://p-x-3.github.io#home">PX3 Home</a></li>
+    <li><a class="px3-padding-large" href="https://p-x-3.github.io/resblog">PX3 Blogs</a></li>
+    <li><a class="px3-padding-large" href="#profile">My Profile</a></li>
+  </ul>
+</div>
+
+<!-- Page Container -->
+<div class="px3-container px3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="px3-row">
+    <!-- Left Column -->
+    <div class="px3-col m3">
+      <!-- Profile -->
+      <div class="px3-card-2 px3-round px3-black">
+        <div class="px3-container">
+         <h4 class="px3-center">My Profile</h4>
+         <p class="px3-center"><img src="imgs/cybrary-img.jpg" class="px3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw px3-margin-right px3-text-theme"></i> Security Reseacher, InfoSec</p>
+         <p><i class="fa fa-home fa-fw px3-margin-right px3-text-theme"></i> Lusaka, Zambia</p>
+         <p><i class="fa fa-birthday-cake fa-fw px3-margin-right px3-text-theme"></i> January, 1995</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="px3-card-2 px3-round">
+        <div class="px3-accordion px3-black">
+          <button onclick="myFunction('Demo3')" class="px3-btn-block px3-theme-l1 px3-left-align"><i class="fa fa-users fa-fw px3-margin-right"></i>Blogs</button>
+          <div id="Demo3" class="px3-accordion-content px3-container">
+         <div class="px3-row-padding">
+         <br>
+           <div class="px3-half">
+             <img src="imgs/anonymous-keep-calm.jpg" style="width:100%" class="px3-margin-bottom">
+           </div>
+           <div class="px3-half">
+             <img src="imgs/build-tech-comp.jpg" style="width:100%" class="px3-margin-bottom">
+           </div>
+           <div class="px3-half">
+             <img src="imgs/proxychains.png" style="width:100%" class="px3-margin-bottom">
+           </div>
+           <div class="px3-half">
+             <img src="imgs/cms-arch-wordpress.png" style="width:100%" class="px3-margin-bottom">
+           </div>
+           <div class="px3-half">
+             <img src="imgs/Hackers-Got-real-Brain.png" style="width:100%" class="px3-margin-bottom">
+           </div>
+           <div class="px3-half">
+             <img src="imgs/Geo-hotz-python-weaponized-ping.png" style="width:100%" class="px3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="px3-card-2 px3-round px3-black px3-hide-small">
+        <div class="px3-container">
+          <p>Interests</p>
+          <p>
+            <span class="px3-tag px3-small px3-theme-d5">News</span>
+            <span class="px3-tag px3-small px3-theme-d3">Projects</span>
+            <span class="px3-tag px3-small px3-theme-d2">Games</span>
+            <span class="px3-tag px3-small px3-theme-l1">Community</span>
+            <span class="px3-tag px3-small px3-theme-l2">Technology</span>
+            <span class="px3-tag px3-small px3-theme-l3">Software Design</span>
+            <span class="px3-tag px3-small px3-theme-l4">Art</span>
+            <span class="px3-tag px3-small px3-theme-l5">Hacking</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="px3-container px3-round px3-theme-l4 px3-border px3-theme-border px3-margin-bottom px3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="px3-hover-text-grey px3-closebtn">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are reading some very cool and exciting blog posts. Find out which one tickles your fancy.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="px3-col m7">
+    
+      <div class="px3-row-padding">
+        <div class="px3-col m12">
+          <div class="px3-card-2 px3-round px3-black">
+            <div class="px3-container px3-padding">
+              <h6 class="px3-opacity">Information and/or Security Blog by P-X-3</h6> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="px3-container px3-card-2 px3-black px3-round px3-margin" id="top_blog"><br>
+        <img src="imgs/Hacker-Symbol.png" alt="Avatar" class="px3-left px3-circle px3-margin-right" style="width:60px">
+        <span class="px3-right px3-opacity">latest</span>
+        <h4>PX7</h4><br>
+        <hr class="px3-clear">
+        <h3>Lorem Ipsum Dola to English</h3>
+        <h4>Latin text version</h4>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+        <h4>English translation</h4>
+        <p>"The pain itself is important, but the pain is enhanced by the adipiscing process, but I give it time to cut it down so that I do some great work and pain. For the purpose of coming to a minimum, who of ours should exercise any employment except to take advantage of the consequences from it."</p>
+        <h3>Meaning</h3>
+        <p>Have you tried Googling it??</p>
+        <p>Coz we're just as bang lol ....</p>
+        <button type="button" class="px3-btn px3-theme-d1 px3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Relate</button> 
+      </div>
+      
+      <div class="px3-container px3-card-2 px3-black px3-round px3-margin"><br>
+        <img src="imgs/Code-Wallpaper-7.jpeg" alt="Avatar0" class="px3-left px3-circle px3-margin-right" style="width:60px">
+        <span class="px3-right px3-opacity">p-x-3</span>
+        <h4>PX5</h4><br>
+        <hr class="px3-clear">
+        <p>Check out some cool stuff to get your hands dirty with coding ....</p>
+          <div class="px3-row-padding" style="margin:0 -16px">
+            <div class="px3-full">
+              <h2>Try the free Google XSS Games for web-hacking</h2>
+                <iframe src="https://xss-game.appspot.com/" style="width:100%" height="700"></iframe>
+              <hr>
+            </div>
+            <div>
+              <p>Some fun walls and memes...</p>
+              <img src="imgs/anonymous-motto.png" style="width:100%" alt="Anonymous Motto" class="px3-margin-bottom">
+            </div>
+            <p>and so much more!</p>
+            <div class="px3-full">
+              <img src="imgs/osint.png" style="width:100%" alt="OSINT" class="px3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="px3-btn px3-theme-d1 px3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Relate</button>
+      </div>  
+
+      <div class="px3-container px3-card-2 px3-black px3-round px3-margin"><br>
+        <img src="imgs/hacker-desktop.png" alt="Avatar1" class="px3-left px3-circle px3-margin-right" style="width:60px">
+        <span class="px3-right px3-opacity">p-x-3</span>
+        <h4>PX13</h4><br>
+        <hr class="px3-clear">
+        <p>Have you seen this?</p>
+        <img src="imgs/hacker-creates-worldwide-map-of-vulnerable-devices.png" style="width:100%" class="px3-margin-bottom">
+        <p>We feature information about some past security breaches, activities and News that either shook the world, changed the way things are done or just too interesting for us to ignore...and disect them.</p>
+        <button type="button" class="px3-btn px3-theme-d1 px3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Relate</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="px3-col m2">
+      <div class="px3-card-2 px3-round px3-black px3-center">
+        <div class="px3-container">
+          <p>Upcoming Events:</p>
+          <img src="imgs/light_walker.jpeg" alt="Light Walker" style="width:100%;">
+          <p><strong>Hackathon</strong></p>
+          <p>Saturday 13:37</p>
+          <p><button class="px3-btn px3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      <div class="px3-card-2 px3-round px3-black px3-padding-16 px3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="px3-card-2 px3-round px3-black px3-padding-32 px3-center">
+        <p><i class="fa fa-bug px3-xxlarge">Quote: "When you feel like giving up, know you're close!"</i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="px3-container px3-theme-d3 px3-padding-16">
+  <h5>p-x-3</h5>
+</footer>
+
+<footer class="px3-container px3-theme-d5">
+  <p>Powered by <a href="https://p-x-3.github.io/index.html" target="_blank">PX3</a></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("px3-show") == -1) {
+        x.className += "px3-show";
+        x.previousElementSibling.className += "px3-theme-d1";
+    } else { 
+        x.className = x.className.replace("px3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" px3-theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("px3-show") == -1) {
+        x.className += " px3-show";
+    } else { 
+        x.className = x.className.replace(" px3-show", "");
+    }
+}
+</script>
+
+ 
+</body></html>
